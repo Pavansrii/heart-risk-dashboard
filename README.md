@@ -1,96 +1,60 @@
-# heart-risk-dashboard
-“A Streamlit dashboard to visualize heart attack risk factors in India”
+Heart Attack Risk Dashboard
+This Streamlit web application provides insights into heart attack risk based on a dataset containing demographic and health-related attributes from individuals across India. Users can interactively filter and analyze data based on age, gender, and state.
 
-🫀 Heart Attack Risk Dashboard – India 🇮🇳
-This project is a simple and interactive Streamlit web app that visualizes heart attack risk based on age, gender, and other factors from an Indian dataset.
+Features
+Displays the complete dataset for reference.
 
-📊 Preview
-The app allows users to:
+Calculates and shows the average heart attack risk based on gender.
 
-View the dataset preview
+Interactive search: filter individuals based on age and gender.
 
-See average heart attack risk by gender
+View the corresponding states for the filtered results.
 
-Visualize age vs heart attack risk using scatter plots
+Dataset
+The app uses a CSV file named heart_attack_prediction_india.csv, which should be placed in the root directory. The dataset is expected to have the following key columns:
 
-Gain quick insights from the data interactively
+Age
 
-📁 Dataset
-File: heart_attack_prediction_india.csv
+Gender
 
-Size: ~900 KB
+Heart_Attack_Risk
 
-Description: Contains data about age, gender, state, and estimated heart attack risk.
+State_Name
 
-Source: (Mention your source here, if known. If you made it yourself, you can say “Manually prepared / simulated.”)
+Note: Ensure that the column names in the CSV match exactly as used in the code.
 
-🚀 How to Run Locally
-1. Clone the repository
+How to Run Locally
+Clone this repository:
+
 bash
 Copy
 Edit
-git clone https://github.com/your-username/heart-attack-dashboard.git
-cd heart-attack-dashboard
-2. Install dependencies
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+Install dependencies (preferably in a virtual environment):
+
 bash
 Copy
 Edit
-pip install streamlit pandas matplotlib seaborn
-3. Run the app
+pip install streamlit pandas
+Run the Streamlit app:
+
 bash
 Copy
 Edit
 streamlit run app.py
-Open your browser at http://localhost:8501
+Usage
+The dashboard displays full data and gender-based risk averages.
 
-📱 Want to View It on Your Phone?
-If you're on the same Wi-Fi:
+Use the input fields to specify an age and gender.
 
-Open the app on your laptop.
+The app filters the data and shows relevant results including the state(s) of the matched records.
 
-Note the Network URL shown by Streamlit.
-
-Open that URL on your phone.
-
-🌐 Deploy Online (Optional)
-You can deploy the app on:
-
-Streamlit Community Cloud
-
-Render
-
-Railway
-
-🛠 Project Structure
-bash
+Folder Structure
 Copy
 Edit
-heart-attack-dashboard/
-├── app.py                  # Streamlit app
-├── heart_attack_prediction_india.csv  # Dataset
-├── cleaned_data.csv        # (Optional) Cleaned dataset
-└── README.md               # This file
-✅ Features Used
-📈 Streamlit
-
-🐼 Pandas
-
-🎨 Seaborn & Matplotlib
-
-📊 Data Cleaning
-
-📱 Mobile-friendly viewing (on same network)
-
-👨‍💻 Author
-Pavan Srinivaas R
-📍 Tirupur, Tamil Nadu, India
-🎓 Sri Krishna Arts and Science College, Coimbatore
-
-💡 Future Improvements
-Add state-wise filtering
-
-Show more visualizations (BMI, lifestyle factors, etc.)
-
-Predict risk using ML models (coming soon...)
-
-
+├── app.py
+├── heart_attack_prediction_india.csv
+└── README.md
+License
+This project is for educational and research purposes only.
